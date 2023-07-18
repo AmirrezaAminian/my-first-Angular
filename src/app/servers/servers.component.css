@@ -1,0 +1,19 @@
+.btn {
+  padding: 10px;
+  background-color: aqua;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  scale: 1.1;
+}
+
+.btn:disabled {
+  scale: (1);
+  background-color: #444;
+  color: #fff;
+}
