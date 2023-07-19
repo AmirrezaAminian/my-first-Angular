@@ -1,4 +1,4 @@
-<label for="">Server Name</label>
+<!-- <label for="">Server Name</label>
 
 <input type="text" class="form-control" [(ngModel)]="serverName">
 
@@ -6,4 +6,16 @@
 <button class="btn btn-primary"  [disabled]="!allownewServer" (click)="onCreateServer()">Add Server</button>
 <p>{{serverCreationStatus}}</p>
  <app-server></app-server>
-<app-server></app-server> 
+<app-server></app-server>  -->
+
+
+
+
+  
+<label for="">UserName</label>
+<input type="text"  [(ngModel)]="userName">
+<p>{{userName}}</p>
+
+<button class="btn btn-primary" [disabled]="userName === '' "  (click)="userName = '' " > 
+    Reset User
+</button>
