@@ -7,6 +7,8 @@ import { Component } from "@angular/core";
         .online {
             color : white;
         }
+
+         
     `]
 })
 export class ServerComponent{
@@ -28,3 +30,5 @@ export class ServerComponent{
         return this.serverStatus === 'online' ? 'green' : 'red'
     }
 }
+
+//** ngClass hatman bayad toosh aya style tariif behse ?? */
