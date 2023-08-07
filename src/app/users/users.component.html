@@ -4,15 +4,14 @@
       <a
         href="#"
         class="list-group-item"
-        *ngFor="let server of servers">
-        {{ server.name }}
+        *ngFor="let user of users">
+        {{ user.name }}
       </a>
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
-    <app-edit-server></app-edit-server>
-    <hr>
-    <app-server></app-server>
+    <app-user></app-user>
   </div>
 </div>
+
 

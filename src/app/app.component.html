@@ -1,18 +1,17 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h3>I'm in the AppComponent!</h3>
-      <hr />
-      <!-- <app-servers></app-servers> -->
-
-       <!-- <button   (click)="showSecret = !showSecret"  [ngClass]="{'true': showSecret}" >cick here</button> -->
-       
-
-       <button (click)="addNum()">Click me</button>
-       <p  [ngStyle]="{'backgroundColor' : 'blue' ,  'color' : '#fff' }"    *ngIf="showSecret">Hello Amirreza</p>
-       <div *ngFor="let logItem of  log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'skyblue' : 'transparent'}" [ngClass]="{'white-text' : logItem >= 10}">
-            {{logItem}}
-       </div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Servers</a></li>
+        <li role="presentation"><a href="#">Users</a></li>
+      </ul>
+    </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+       <router-outlet></router-outlet>
+    </div>
+  </div>
+   
 </div>
- 
