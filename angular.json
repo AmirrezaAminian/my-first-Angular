@@ -25,8 +25,7 @@
               "src/assets"
             ],
             "styles": [
-               "src/styles.css",
-               "src/assets/bootstrap.css"
+               "src/styles.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
